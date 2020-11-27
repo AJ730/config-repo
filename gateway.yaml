@@ -33,7 +33,7 @@ zuul:
 
     online_inventory:
       sensitiveHeaders:
-      path: /online/**
+      path: /online/**, /online/list/**
       stripPrefix: false
       serviceId: online_inventory
 
