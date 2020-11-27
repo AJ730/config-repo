@@ -15,7 +15,7 @@ zuul:
 
     downloads:
       sensitiveHeaders:
-      path: /downloads/**
+      path: /downloads/greetings**
       stripPrefix: false
       serviceId: downloads
 
