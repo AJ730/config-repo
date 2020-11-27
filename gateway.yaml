@@ -31,11 +31,19 @@ zuul:
       stripPrefix: false
       serviceId: locations
 
+
     online_inventory:
       sensitiveHeaders:
-      path: /online/**, /online/list/**
+      path: /online/**
       stripPrefix: false
       serviceId: online_inventory
+
+    online_inventory_list:
+      sensitiveHeaders:
+      path: /online/list/**
+      stripPrefix: false
+      serviceId: online_inventory
+
 
     pickreturn:
       sensitiveHeaders:
