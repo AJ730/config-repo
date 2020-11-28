@@ -7,6 +7,13 @@ eureka:
 
 zuul:
   routes:
+    auth-server:
+      sensitiveHeaders:
+      path: /auth/**
+      stripPrefix: false
+      serviceId: auth-server
+      sensitive-headers: Cookie,Set-Cookie
+
     admin_activity:
       sensitiveHeaders:
       path: /admin/**
