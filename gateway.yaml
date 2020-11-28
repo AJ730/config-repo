@@ -1,0 +1,96 @@
+server:
+  port: 7500
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    admin_activity:
+      sensitiveHeaders:
+      path: /admin/**
+      stripPrefix: false
+      serviceId: admin_activity
+
+    downloads:
+      sensitiveHeaders:
+      path: /downloads**
+      stripPrefix: false
+      serviceId: downloads
+
+    library-inventory:
+      sensitiveHeaders:
+      path: /library/**
+      stripPrefix: false
+      serviceId: library_inventory
+
+    locations:
+      sensitiveHeaders:
+      path: /locations/**
+      stripPrefix: false
+      serviceId: locations
+
+    ####################################### ONLINE INVENTORY #######################################
+
+    online_inventory:
+      sensitiveHeaders:
+      path: /online/**
+      stripPrefix: false
+      serviceId: online_inventory
+
+    online_inventory-find:
+      sensitiveHeaders:
+      path: /online/find/**
+      stripPrefix: false
+      serviceId: online_inventory
+
+    online_inventory-list:
+      sensitiveHeaders:
+      path: /online/list/**
+      stripPrefix: false
+      serviceId: online_inventory
+
+    online_inventory-create:
+      sensitiveHeaders:
+      path: /online/create/**
+      stripPrefix: false
+      serviceId: online_inventory
+
+    online_inventory-update:
+      sensitiveHeaders:
+      path: /online/update/**
+      stripPrefix: false
+      serviceId: online_inventory
+
+    online_inventory-delete:
+      sensitiveHeaders:
+      path: /online/delete/**
+      stripPrefix: false
+      serviceId: online_inventory
+
+    ################################################################################################
+
+    pickreturn:
+      sensitiveHeaders:
+      path: /return/**
+      stripPrefix: false
+      serviceId: pickreturn
+
+    queue:
+      sensitiveHeaders:
+      path: /queue/**
+      stripPrefix: false
+      serviceId: queue
+
+    scores:
+      sensitiveHeaders:
+      path: /scores/**
+      stripPrefix: false
+      serviceId: scores
+
+    user:
+      sensitiveHeaders:
+      path: /user/**
+      stripPrefix: false
+      serviceId: user
