@@ -45,35 +45,35 @@ zuul:
       stripPrefix: false
       serviceId: online_inventory
 
-    online_inventory-find:
-      sensitiveHeaders:
-      path: /online/find/**
-      stripPrefix: false
-      serviceId: online_inventory
-
-    online_inventory-list:
-      sensitiveHeaders:
-      path: /online/list/**
-      stripPrefix: false
-      serviceId: online_inventory
-
-    online_inventory-create:
-      sensitiveHeaders:
-      path: /online/create/**
-      stripPrefix: false
-      serviceId: online_inventory
-
-    online_inventory-update:
-      sensitiveHeaders:
-      path: /online/update/**
-      stripPrefix: false
-      serviceId: online_inventory
-
-    online_inventory-delete:
-      sensitiveHeaders:
-      path: /online/delete/**
-      stripPrefix: false
-      serviceId: online_inventory
+#    online_inventory-find:
+#      sensitiveHeaders:
+#      path: /online/find/**
+#      stripPrefix: false
+#      serviceId: online_inventory
+#
+#    online_inventory-list:
+#      sensitiveHeaders:
+#      path: /online/list/**
+#      stripPrefix: false
+#      serviceId: online_inventory
+#
+#    online_inventory-create:
+#      sensitiveHeaders:
+#      path: /online/create/**
+#      stripPrefix: false
+#      serviceId: online_inventory
+#
+#    online_inventory-update:
+#      sensitiveHeaders:
+#      path: /online/update/**
+#      stripPrefix: false
+#      serviceId: online_inventory
+#
+#    online_inventory-delete:
+#      sensitiveHeaders:
+#      path: /online/delete/**
+#      stripPrefix: false
+#      serviceId: online_inventory
 
     ################################################################################################
 
