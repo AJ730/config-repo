@@ -94,9 +94,3 @@ zuul:
       path: /scores/**
       stripPrefix: false
       serviceId: scores
-
-    user:
-      sensitiveHeaders:
-      path: /user/**
-      stripPrefix: false
-      serviceId: user
