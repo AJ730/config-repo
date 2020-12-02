@@ -69,3 +69,9 @@ zuul:
       path: /scores/**
       stripPrefix: false
       serviceId: scores
+
+    borrow:
+      sensitiveHeaders:
+      path: /borrow/**
+      stripPrefix: false
+      serviceId: borrow
