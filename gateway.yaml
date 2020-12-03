@@ -38,7 +38,7 @@ zuul:
       sensitiveHeaders:
       path: /library/**
       stripPrefix: false
-      serviceId: library_inventory
+      serviceId: library-inventory
 
     locations:
       sensitiveHeaders:
