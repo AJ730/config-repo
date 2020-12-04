@@ -75,3 +75,9 @@ zuul:
       path: /borrow/**
       stripPrefix: false
       serviceId: borrow
+
+    download_service:
+      sensitiveHeaders:
+        path: /download_service/**
+        stripPrefix: false
+        serviceId: borrow
