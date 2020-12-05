@@ -38,7 +38,7 @@ zuul:
       sensitiveHeaders:
       path: /library/**
       stripPrefix: false
-      serviceId: library_inventory
+      serviceId: library-inventory
 
     locations:
       sensitiveHeaders:
@@ -69,3 +69,21 @@ zuul:
       path: /scores/**
       stripPrefix: false
       serviceId: scores
+
+    borrow:
+      sensitiveHeaders:
+      path: /borrow/**
+      stripPrefix: false
+      serviceId: borrow
+
+    download_service:
+      sensitiveHeaders:
+      path: /download_service/**
+      stripPrefix: false
+      serviceId: download_service
+
+    online_history:
+      sensitiveHeaders:
+      path: /online_history/**
+      stripPrefix: false
+      serviceId: online_history
