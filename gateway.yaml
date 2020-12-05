@@ -81,3 +81,9 @@ zuul:
       path: /download_service/**
       stripPrefix: false
       serviceId: download_service
+
+    online_history:
+      sensitiveHeaders:
+      path: /online_history/**
+      stripPrefix: false
+      serviceId: online_history
