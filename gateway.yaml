@@ -24,7 +24,7 @@ zuul:
 
     admin_activity:
       sensitiveHeaders:
-      path: /admin/**
+      path: /adminactivity/**
       stripPrefix: false
       serviceId: admin_activity
 
