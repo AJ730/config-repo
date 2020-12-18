@@ -94,3 +94,9 @@ zuul:
       path: /online_history/**
       stripPrefix: false
       serviceId: online_history
+
+    browse:
+      sensitiveHeaders:
+      path: /browse/**
+      stripPrefix: false
+      serviceId: browse_service
